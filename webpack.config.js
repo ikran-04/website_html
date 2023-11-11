@@ -16,8 +16,8 @@ module.exports = {
         test: /\.html$/,
         use: "html-loader",
         // test: /\.js$/,
-        // exclude: /node_modules/,
-        // use: "babel-loader",
+        exclude: /node_modules/,
+        use: "babel-loader",
       },
       // use css-loader and style-loader to load CSS files
       {
