@@ -15,7 +15,7 @@
         style="background-image: url(./images/nav_bg.jpg)"
         class="sticky z-30 top-0 w-full py-2 px-4"
       >
-        <div class="w-4/5 m-auto flex items-center justify-between">
+        <div class="w-11/2 md:w-4/5 m-auto flex items-center justify-between">
           <div class="flex items-center space-x-4">
             <a href="#" class="text-blue-500 hover:text-blue-700"
               ><img src="./images/instigram.png" alt="" class="w-8 h-8"
@@ -27,11 +27,11 @@
               <img src="./images/facebok.png" alt="" class="w-8 h-8" />
             </a>
           </div>
-          <p class="text-[#F8B98D] font-semibold">
+          <p class="text-[#F8B98D] text-xs font-semibold">
             Location: Plot 2-4A, Nakasero Road, Ground Floor,
           </p>
           <button
-            class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+            class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 text-xs rounded focus:outline-none focus:shadow-outline"
             type="button"
           >
             Announcement
@@ -85,7 +85,7 @@
     <!-- hero  -->
     <div class="w-full bg-[#F8B98D]">
       <div
-        class="w-4/5 m-auto bg-gray-200/30 flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0 p-5 xl:p-24 my-32"
+        class="w-4/5 m-auto bg-gray-200/30 flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0 p-5 xl:p-24 md:my-32 my-40"
       >
         <div class="md:w-1/2 space-y-8">
           <h1 class="text-5xl xl:text-8xl font-bold">We are so creative</h1>
@@ -109,14 +109,14 @@
     </div>
 
     <!-- who are We -->
-    <div class="w-3/5 m-auto">
-      <div class="w-1/3 m-auto text-center space-y-5">
+    <div class="w-4/5 md:w-3/5 m-auto">
+      <div class="lg:w-1/2 xl:w-1/3 m-auto text-center space-y-5">
         <p class="text-2xl">Who we are</p>
         <h1 class="text-5xl font-bold text-[#07458B]">
           We provide best solution for you
         </h1>
       </div>
-      <div class="grid grid-cols-3 space-x-10 py-20">
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 xl:space-x-10 py-20">
         <div
           class="space-y-5 text-white bg-gradient-to-r from-[#07458B] to-[#B1E8FF] p-10 rounded-lg drop-shadow-2xl h-[300px] flex flex-col justify-center items-center"
         >
@@ -128,7 +128,7 @@
           </p>
         </div>
         <div
-          class="space-y-5 bg-gradient-to-r from-[#07458B] to-[#B1E8FF] text-white p-10 rounded-lg drop-shadow-2xl h-[300px] mt-20 flex flex-col justify-center items-center"
+          class="space-y-5 bg-gradient-to-r from-[#07458B] to-[#B1E8FF] text-white p-10 rounded-lg drop-shadow-2xl h-[300px] xl:mt-20 flex flex-col justify-center items-center"
         >
           <img src="./images/vision_white.png" alt="" />
           <h1 class="text-2xl font-semibold">Our Vision</h1>
@@ -259,7 +259,9 @@
           veritatis sapiente repudiandae iste obcaecati beatae!
         </p>
       </div>
-      <div class="grid grid-cols-8 justify-items-center py-10">
+      <div
+        class="grid grid-cols-4 gap-4 md:grid-cols-8 justify-items-center py-10"
+      >
         <img src="./images/mobile_bank.png" alt="" />
         <img src="./images/mobile_bank.png" alt="" />
         <img src="./images/mobile_bank.png" alt="" />
@@ -278,26 +280,32 @@
         <div
           class="md:w-4/5 h-full m-auto flex justify-between items-center relative"
         >
-          <div class="w-1/2 p-4 flex flex-col space-y-8">
-            <h1 class="text-white md:text-5xl font-semibold">
+          <div class="md:w-1/2 p-4 flex flex-col space-y-8">
+            <h1
+              class="text-white hidden md:flex md:text-4xl xl:text-5xl font-semibold"
+            >
               Keep Your Fingers On The Invesment Market Pulse
             </h1>
-            <div class="flex space-x-5">
+            <div
+              class="z-20 flex flex-col justify-center items-start md:flex-row md:space-x-5 space-y-5 md:space-y-0"
+            >
               <button
-                class="px-8 py-3 rounded-lg bg-[#032143] text-white flex items-center space-x-5"
+                class="px-5 py-2 rounded-lg bg-[#032143] text-white flex items-center space-x-5"
               >
                 <img src="./images/apple_os.png" alt="" class="w-8 h-8" />
-                <a href="#" class="text-xs md:text-base"> for os</a>
+                <a href="#" class="text-xs md:text-base">iphone</a>
               </button>
               <button
-                class="px-8 py-3 rounded-lg border-2 border-[#032143] text-[#032143] flex items-center space-x-5"
+                class="px-4 py-1 rounded-lg border-2 border-[#032143] text-[#032143] flex items-center space-x-5"
               >
                 <img src="./images/android.png" alt="" class="w-8 h-8" />
-                <a href="#" class="text-xs md:text-base"> for android</a>
+                <a href="#" class="text-xs md:text-base">android</a>
               </button>
             </div>
           </div>
-          <div class="w-[200px] md:w-[350px] absolute md:-top-24 right-0 p-10">
+          <div
+            class="w-[200px] md:w-[350px] absolute md:-top-24 z-0 right-0 p-10"
+          >
             <img src="./images/phone.png" alt="" class="" />
           </div>
         </div>
