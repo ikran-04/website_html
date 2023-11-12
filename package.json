@@ -85,8 +85,7 @@
     "yaml": "^2.3.4"
   },
   "scripts": {
-    "build:css": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --watch",
-    "build": "webpack"
+    "build:css": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
