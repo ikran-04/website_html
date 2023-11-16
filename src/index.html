@@ -125,7 +125,9 @@
     </div>
 
     <!-- banking -->
-    <div class="w-4/5 m-auto flex justify-center space-x-10 pb-20">
+    <div
+      class="w-4/5 m-auto flex flex-col md:flex-row md:space-x-10 space-y-10 md:space-y-0 pb-20"
+    >
       <div class="p-10 space-y-5 bg-white rounded-lg">
         <img src="./images/pers_banking.png" alt="" class="w-12 h-12" />
         <h1 class="text-xl font-semibold">Personal Banking</h1>
@@ -174,11 +176,13 @@
     </div>
 
     <!-- auto finance -->
-    <div class="w-4/5 m-auto flex justify-between items-center py-20">
+    <div
+      class="w-4/5 m-auto flex flex-col md:flex-row justify-between items-center py-20 space-y-10 md:space-y-0"
+    >
       <div class="">
         <img src="./images/team_img.svg" alt="" />
       </div>
-      <div class="w-1/2 space-y-8">
+      <div class="md:w-1/2 space-y-8">
         <h1 class="text-6xl text-[#07458B] font-bold">
           Get Auto Financing Today
         </h1>
@@ -209,6 +213,7 @@
         </div>
       </div>
     </div>
+
     <!-- why does -->
 
     <div
@@ -439,8 +444,85 @@
 
     <!-- News -->
 
-    <div>
-      <div></div>
+    <div class="w-4/5 m-auto">
+      <div class="grid grid-cols-3 grid-rows-2 gap-10">
+        <div class="relative col-span-2 row-span-2 drop-shadow-2xl">
+          <img src="./images/image4.svg" alt="" class="rounded-md" />
+          <div
+            class="bg-gradient-to-b from-transparent to-gray-900 w-full absolute bottom-2 rounded-md text-white space-y-5 p-10"
+          >
+            <h1 class="text-4xl font-bold">
+              Salaam Microfinance Bank joins Kenya Bankers Association
+            </h1>
+            <p class="text-sm">
+              Summary Salaam Microfinance Bank Was Formally Known As Uwezo
+              Microfinance. The Lender Was Recently Acquired…
+            </p>
+            <div class="flex space-x-10 py-5">
+              <p class="flex space-x-2 items-center">
+                <img src="./images/date.png" alt="" class="w-8 h-8" />
+                <span>May 20, 2022</span>
+              </p>
+              <p class="flex space-x-2 items-center">
+                <img src="./images/news.png" alt="" class="w-8 h-8" />
+                <span>News Press</span>
+              </p>
+            </div>
+            <button>
+              <a
+                href=""
+                class="px-5 py-3 rounded-md bg-[#F8B98D] text-[#032143] font-semibold"
+                >Explore More</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="relative drop-shadow-2xl">
+          <img src="./images/image2.svg" alt="" class="rounded-md" />
+          <div
+            class="bg-gradient-to-b from-transparent to-gray-900 w-full absolute bottom-2 rounded-md text-white space-y-5 p-4"
+          >
+            <h1 class="text-lg font-bold">
+              Salaam Microfinance Bank joins Kenya..
+            </h1>
+            <p class="text-sm">Summary Salaam Microfinance Bank Was F..…</p>
+            <div class="flex space-x-10">
+              <p class="flex space-x-2 items-center">
+                <img src="./images/date.png" alt="" class="w-8 h-8" />
+                <span>May 20, 2022</span>
+              </p>
+              <p class="flex space-x-2 items-center">
+                <img src="./images/news.png" alt="" class="w-8 h-8" />
+                <span>News Press</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative drop-shadow-2xl">
+          <img src="./images/image3.svg" alt="" class="rounded-md" />
+          <div
+            class="bg-gradient-to-b from-transparent to-gray-900 w-full absolute bottom-0 rounded-md text-white space-y-2 p-4"
+          >
+            <h1 class="text-lg font-bold">
+              Salaam Microfinance Bank joins Kenya Bankers Association
+            </h1>
+            <p class="text-sm">
+              Summary Salaam Microfinance Bank Was Formally...
+            </p>
+
+            <div class="flex space-x-10">
+              <p class="flex space-x-2 items-center">
+                <img src="./images/date.png" alt="" class="w-8 h-8" />
+                <span>May 20, 2022</span>
+              </p>
+              <p class="flex space-x-2 items-center">
+                <img src="./images/news.png" alt="" class="w-8 h-8" />
+                <span>News Press</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- cards -->
@@ -508,7 +590,7 @@
     <!-- footer -->
     <footer class="w-full bg-[#040C15] py-10">
       <div
-        class="w-11/12 md:w-4/5 m-auto py-10 grid grid-cols-2 md:grid-cols-7 gap-8"
+        class="w-11/12 md:w-4/5 m-auto py-10 grid grid-cols-3 md:grid-cols-7 gap-8"
       >
         <div class="col-span-2 space-y-5">
           <img src="./images/logo.png" alt="" class="w-36" />
