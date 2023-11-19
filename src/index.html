@@ -453,8 +453,8 @@
 
     <!-- *315# -->
     <div class="w-4/5 m-auto">
-      <div class="w-1/2 m-auto text-center space-y-5">
-        <h1 class="text-4xl font-bold">
+      <div class="md:w-1/2 m-auto text-center space-y-5">
+        <h1 class="text-2xl md:text-4xl font-bold">
           Manage your Salaam Microfinance Bank account from anywhere
         </h1>
         <h1 class="text-xl">Dial *315#</h1>
@@ -664,13 +664,13 @@
       <h1 class="text-7xl py-10 text-[#07458B]">
         Latest News <span class="font-bold text-[#F8B98D]">& Events</span>
       </h1>
-      <div class="grid grid-cols-3 grid-rows-2 gap-10">
-        <div class="relative col-span-2 row-span-2 drop-shadow-2xl">
+      <div class="grid md:grid-cols-3 grid-rows-2 gap-10">
+        <div class="relative md:col-span-2 md:row-span-2 drop-shadow-2xl">
           <img src="./images/image4.svg" alt="" class="rounded-md" />
           <div
-            class="bg-gradient-to-b from-transparent to-gray-900 w-full absolute bottom-2 rounded-md text-white space-y-5 p-10"
+            class="bg-gradient-to-b from-transparent to-gray-900 w-full absolute bottom-2 rounded-md text-white md:space-y-5 p-5 md:p-10"
           >
-            <h1 class="text-4xl font-bold">
+            <h1 class="text-lg md:text-4xl font-bold">
               Salaam Microfinance Bank joins Kenya Bankers Association
             </h1>
             <p class="text-sm">
@@ -679,15 +679,23 @@
             </p>
             <div class="flex space-x-10 py-5">
               <p class="flex space-x-2 items-center">
-                <img src="./images/date.png" alt="" class="w-8 h-8" />
+                <img
+                  src="./images/date.png"
+                  alt=""
+                  class="w-4 h-4 md:w-8 md:h-8"
+                />
                 <span>May 20, 2022</span>
               </p>
               <p class="flex space-x-2 items-center">
-                <img src="./images/news.png" alt="" class="w-8 h-8" />
+                <img
+                  src="./images/news.png"
+                  alt=""
+                  class="w-4 h-4 md:w-8 md:8 h-8"
+                />
                 <span>News Press</span>
               </p>
             </div>
-            <button>
+            <button class="hidden md:flex">
               <a
                 href=""
                 class="px-5 py-3 rounded-md bg-[#F8B98D] text-[#032143] font-semibold"
