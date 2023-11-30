@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>About Us</title>
@@ -14,7 +21,7 @@
     >
       <div
         style="background-image: url(./images/nav_bg.jpg)"
-        class="sticky z-30 top-0 w-full py-2 px-4"
+        class="hidden md:flex sticky z-30 top-0 w-full py-2 px-4"
       >
         <div class="w-11/2 md:w-4/5 m-auto flex items-center justify-between">
           <div class="flex items-center space-x-4">
@@ -80,6 +87,9 @@
             </li>
           </ul>
         </div>
+        <button class="flex md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </nav>
 
@@ -191,7 +201,7 @@
     </div>
     <footer class="w-full bg-[#040C15] py-10">
       <div
-        class="w-11/12 md:w-4/5 m-auto py-10 grid grid-cols-3 md:grid-cols-7 gap-8"
+        class="w-11/12 md:w-4/5 m-auto py-10 grid grid-cols-2 md:grid-cols-7 gap-8"
       >
         <div class="col-span-2 space-y-5">
           <img src="./images/logo.png" alt="" class="w-36" />
@@ -218,7 +228,7 @@
             <a href="#">Digital Banking</a>
           </div>
         </div>
-        <div>
+        <div class="w-full">
           <h1 class="font-bold text-white py-2">Explore More</h1>
           <div class="flex flex-col space-y-4 text-sm text-gray-300">
             <a href="#">Transfer money</a>

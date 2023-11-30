@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Document</title>
@@ -14,7 +21,7 @@
     >
       <div
         style="background-image: url(./images/nav_bg.jpg)"
-        class="sticky z-30 top-0 w-full py-2 px-4"
+        class="hidden md:flex sticky z-30 top-0 w-full py-2 px-4"
       >
         <div class="w-11/2 md:w-4/5 m-auto flex items-center justify-between">
           <div class="flex items-center space-x-4">
@@ -62,9 +69,7 @@
               >
             </li>
             <li>
-              <a
-                href="/about.html"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded"
+              <a href="/" class="block py-2 pl-3 pr-4 text-gray-700 rounded"
                 >About</a
               >
             </li>
@@ -82,15 +87,18 @@
             </li>
           </ul>
         </div>
+        <button class="flex md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </nav>
 
     <!-- hero  -->
-    <div class="w-full bg-[#F8B98D]">
+    <div class="w-full bg-gradient-to-b from-[#185DAB] to-cyan-400">
       <div
-        class="w-4/5 m-auto bg-gray-200/30 flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0 p-5 xl:p-24 md:my-32 my-40"
+        class="w-4/5 m-auto bg-gray-400/30 flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0 p-5 xl:p-24 md:my-32 my-40"
       >
-        <div class="md:w-1/2 space-y-8">
+        <div class="md:w-1/2 space-y-8 text-white">
           <h1 class="text-5xl xl:text-8xl font-bold">We are so creative</h1>
           <p class="text-sm md:text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
@@ -105,8 +113,8 @@
             >
           </button>
         </div>
-        <div class="md:w-1/2">
-          <img src="./images/aboutTest.png" alt="" class="w-full h-full" />
+        <div class="md:w-1/3">
+          <img src="./images/app_img.png" alt="" class="w-full h-full" />
         </div>
       </div>
     </div>
@@ -121,7 +129,7 @@
       </div>
       <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 xl:space-x-10 py-20">
         <div
-          class="space-y-5 text-white bg-gradient-to-r from-[#07458B] to-[#B1E8FF] p-10 rounded-lg drop-shadow-2xl h-[300px] flex flex-col justify-center items-center"
+          class="space-y-5 text-white bg-gradient-to-r from-[#07458B] to-[#8F67FF] p-10 rounded-lg drop-shadow-2xl h-[300px] flex flex-col justify-center items-center"
         >
           <img src="./images/goal_whi.png" alt="" />
           <h1 class="text-2xl font-semibold">Our Mission</h1>
@@ -131,7 +139,7 @@
           </p>
         </div>
         <div
-          class="space-y-5 bg-gradient-to-r from-[#07458B] to-[#B1E8FF] text-white p-10 rounded-lg drop-shadow-2xl h-[300px] xl:mt-20 flex flex-col justify-center items-center"
+          class="space-y-5 bg-gradient-to-r from-[#07458B] to-cyan-700 text-white p-10 rounded-lg drop-shadow-2xl h-[300px] xl:mt-20 flex flex-col justify-center items-center"
         >
           <img src="./images/vision_white.png" alt="" />
           <h1 class="text-2xl font-semibold">Our Vision</h1>
@@ -140,7 +148,7 @@
           </p>
         </div>
         <div
-          class="space-y-5 text-white bg-gradient-to-r from-[#07458B] to-[#B1E8FF] p-10 rounded-lg drop-shadow-2xl h-[300px] flex flex-col justify-center items-center"
+          class="space-y-5 text-white bg-gradient-to-r from-[#07458B] to-[#8F67FF] p-10 rounded-lg drop-shadow-2xl h-[300px] flex flex-col justify-center items-center"
         >
           <img src="./images/pin_white.png" alt="" />
           <h1 class="text-2xl font-semibold">Our Slogan</h1>
@@ -279,7 +287,7 @@
     <!-- downlaod app -->
 
     <div class="w-11/12 md:w-4/5 m-auto py-44">
-      <div class="w-full h-[250px] md:h-[400px] bg-blue-200 rounded-2xl">
+      <div class="w-full h-[250px] md:h-[400px] bg-[#185DAB] rounded-2xl">
         <div
           class="md:w-4/5 h-full m-auto flex justify-between items-center relative"
         >
@@ -290,7 +298,7 @@
               Keep Your Fingers On The Invesment Market Pulse
             </h1>
             <div
-              class="z-20 flex flex-col justify-center items-start md:flex-row md:space-x-5 space-y-5 md:space-y-0"
+              class="z-20 flex flex-col items-start md:flex-row md:space-x-5 space-y-5 md:space-y-0"
             >
               <button
                 class="px-5 py-2 rounded-lg bg-[#032143] text-white flex items-center space-x-5"
@@ -309,7 +317,7 @@
           <div
             class="w-[200px] md:w-[350px] absolute md:-top-24 z-0 right-0 p-10"
           >
-            <img src="./images/phone.png" alt="" class="" />
+            <img src="./images/download.png" alt="" class="" />
           </div>
         </div>
       </div>
@@ -318,13 +326,17 @@
     <!-- footer -->
     <footer class="w-full bg-[#040C15] py-10">
       <div
-        class="w-11/12 md:w-4/5 m-auto py-10 grid grid-cols-2 md:grid-cols-4 gap-4"
+        class="w-11/12 md:w-4/5 m-auto py-10 grid grid-cols-2 md:grid-cols-7 gap-8"
       >
-        <div>
+        <div class="col-span-2 space-y-5">
           <img src="./images/logo.png" alt="" class="w-36" />
+          <p class="text-xs text-gray-500">
+            We are more than just a bank, Work with individuals and businesses,
+            helping SMEs grow through financing and advisory services.
+          </p>
         </div>
         <div>
-          <h1 class="font-bold text-white py-2">Pages</h1>
+          <h1 class="font-bold text-white py-2">Navigation</h1>
           <div class="flex flex-col space-y-4 text-sm text-gray-300">
             <a href="#">home</a>
             <a href="#">about</a>
@@ -333,23 +345,35 @@
           </div>
         </div>
         <div>
-          <h1 class="font-bold text-white py-2">Pages</h1>
+          <h1 class="font-bold text-white py-2">Quick Links</h1>
           <div class="flex flex-col space-y-4 text-sm text-gray-300">
-            <a href="#">home</a>
-            <a href="#">about</a>
-            <a href="#">contact</a>
-            <a href="#">features</a>
+            <a href="#">Open Account</a>
+            <a href="#">Ask For Help</a>
+            <a href="#">Save Your money</a>
+            <a href="#">Digital Banking</a>
           </div>
         </div>
-        <div class="flex flex-col justify-between">
+        <div class="w-full">
+          <h1 class="font-bold text-white py-2">Explore More</h1>
+          <div class="flex flex-col space-y-4 text-sm text-gray-300">
+            <a href="#">Transfer money</a>
+            <a href="#">ATM Service</a>
+            <a href="#">Forex Services</a>
+            <a href="#">Cost OF Credit</a>
+          </div>
+        </div>
+        <div class="col-span-2 flex flex-col justify-between">
           <div class="space-y-3">
             <h1 class="text-lg text-white">Subscribe for News</h1>
-            <div class="px-5 py-2 border border-gray-500 rounded-xl">
+            <div class="flex items-center space-x-2">
               <input
                 type="email"
                 placeholder="enter your email"
-                class="outline-0 bg-transparent text-gray-300"
+                class="outline-0 bg-transparent px-5 py-2 text-gray-300 border border-gray-500 rounded-xl w-11/12"
               />
+              <button class="px-5 py-2 bg-red-500 rounded text-white">
+                Send
+              </button>
             </div>
           </div>
           <div class="flex items-center space-x-5">
