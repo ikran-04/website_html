@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <!-- Include Tailwind CSS via CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="max-w-3xl mx-auto mt-8 p-6 bg-white shadow-md rounded-md">
+      <h1 class="text-2xl font-semibold mb-6">Frequently Asked Questions</h1>
+
+      <!-- FAQ Item 1 -->
+      <div class="mb-4">
+        <button
+          class="flex justify-between w-full items-center p-4 bg-gray-200 rounded-md focus:outline-none"
+        >
+          <span class="text-lg font-semibold">Question 1?</span>
+          <span class="text-gray-600">+</span>
+        </button>
+        <div class="hidden mt-2 text-gray-800">
+          <p>Answer to question 1.</p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="mb-4">
+        <button
+          class="flex justify-between w-full items-center p-4 bg-gray-200 rounded-md focus:outline-none"
+        >
+          <span class="text-lg font-semibold">Question 2?</span>
+          <span class="text-gray-600">+</span>
+        </button>
+        <div class="hidden mt-2 text-gray-800">
+          <p>Answer to question 2.</p>
+        </div>
+      </div>
+
+      <!-- Add more FAQ items as needed -->
+    </div>
+
+    <script>
+      // Add JavaScript to toggle visibility of answers on button click
+      document.addEventListener("DOMContentLoaded", function () {
+        const faqButtons = document.querySelectorAll(".mb-4 button");
+
+        faqButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const answer = button.nextElementSibling;
+            answer.classList.toggle("hidden");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
