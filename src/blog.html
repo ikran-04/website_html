@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- nav bar -->
+    <nav class="">
+      <div
+        class="w-4/5 m-auto flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="/">
+          <img src="./images/logo_black.png" class="w-28" alt=" Logo" />
+        </a>
+
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="/index.html"
+                class="block py-2 pl-3 pr-4 rounded text-gray-900"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/about.html"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-blue-700 rounded"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="/services.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="/blog.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="/contact.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button class="flex md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="w-4/5 m-auto grid grid-cols-3 grid-rows-2 gap-10 py-10">
+      <div class="col-span-2 row-span-2">
+        <div class="relative">
+          <img
+            src="./images/blog_img1.svg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 text-white p-10 bg-red-500/30 space-y-5"
+          >
+            <h1 class="text-3xl font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              eaque inventore quibusdam.
+            </h1>
+            <p>Fri \ 20 july 2020</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="relative">
+          <img
+            src="./images/blog_img2.svg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 text-white p-5 bg-gray-500/30 space-y-5"
+          >
+            <h1 class="text-xl font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            </h1>
+
+            <p class="text-xs text-gray-300">Fri \ 20 july 2020</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="relative">
+          <img
+            src="./images/blog_img3.png"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 text-white p-5 bg-gray-500/30 space-y-5"
+          >
+            <h1 class="text-xl font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            </h1>
+            <p class="text-xs text-gray-300">Fri \ 20 july 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Latest  -->
+
+    <div class="w-4/5 m-auto py-20">
+      <h1 class="text-4xl font-bold">
+        <span class="border-b-4 border-blue-800">The</span> Latest
+      </h1>
+      <div class="py-10 flex gap-10 lg:grid-cols-3">
+        <div class="w-[400px] h-[480px] bg-white drop-shadow-2xl">
+          <img
+            src="./images/blog_img5.svg"
+            alt=""
+            class="w-full h-[50%] object-cover"
+          />
+          <div class="p-5 space-y-5">
+            <h1 class="text-xl font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </h1>
+            <p class="text-sm text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur reiciendis minima impedit ex magnam totam temporibus
+              vero voluptates suscipit non.
+            </p>
+            <p>
+              <span class="font-semibold text-gray-500">News</span>
+              <span class="text-gray-300">2 months ago</span>
+            </p>
+          </div>
+        </div>
+        <div class="w-[400px] h-[480px] bg-white drop-shadow-2xl">
+          <img
+            src="./images/blog_img4.svg"
+            alt=""
+            class="w-full h-[50%] object-cover"
+          />
+          <div class="p-5 space-y-5">
+            <h1 class="text-xl font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </h1>
+            <p class="text-sm text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur reiciendis minima impedit ex magnam totam temporibus
+              vero voluptates suscipit non.
+            </p>
+            <p>
+              <span class="font-semibold text-gray-500">Event</span>
+              <span class="text-gray-300">2 months ago</span>
+            </p>
+          </div>
+        </div>
+        <div class="w-[400px] h-[480px] bg-white drop-shadow-2xl">
+          <img
+            src="./images/blog_img2.svg"
+            alt=""
+            class="w-full h-[50%] object-cover"
+          />
+          <div class="p-5 space-y-5">
+            <h1 class="text-xl font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </h1>
+            <p class="text-sm text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur reiciendis minima impedit ex magnam totam temporibus
+              vero voluptates suscipit non.
+            </p>
+            <p>
+              <span class="font-semibold text-gray-500">News</span>
+              <span class="text-gray-300">2 months ago</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- slide show -->
+    <div class="relative overflow-hidden py-20">
+      <div
+        id="imageSlider"
+        class="flex space-x-5 transition-transform h-[600px] ease-in-out duration-500 transform"
+      >
+        <div class="w-[800px] flex-shrink-0">
+          <div class="relative w-full h-full">
+            <img
+              src="./images/blog_img4.svg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute bottom-0 text-white p-10 space-y-5">
+              <h1 class="text-3xl font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                eaque inventore quibusdam.
+              </h1>
+              <p>Fri \ 20 july 2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-[800px] flex-shrink-0">
+          <div class="relative w-full h-full">
+            <img
+              src="./images/blog_img2.svg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute bottom-0 text-white p-10 space-y-5">
+              <h1 class="text-3xl font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                eaque inventore quibusdam.
+              </h1>
+              <p>Fri \ 20 july 2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-[800px] flex-shrink-0">
+          <div class="relative w-full h-full">
+            <img
+              src="./images/blog_img4.svg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute bottom-0 text-white p-10 space-y-5">
+              <h1 class="text-3xl font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                eaque inventore quibusdam.
+              </h1>
+              <p>Fri \ 20 july 2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-[800px] flex-shrink-0">
+          <div class="relative w-full h-full">
+            <img
+              src="./images/blog_img2.svg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute bottom-0 text-white p-10 space-y-5">
+              <h1 class="text-3xl font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                eaque inventore quibusdam.
+              </h1>
+              <p>Fri \ 20 july 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div
+        class="absolute top-1/2 px-5 w-full flex items-center justify-between"
+      >
+        <button
+          onclick="prevSlide()"
+          class="text-white bg-gray-500/30 hover:bg-indigo-700 px-4 py-2 rounded-full"
+        >
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button
+          onclick="nextSlide()"
+          class="text-white bg-gray-500/30 0 px-4 py-2 rounded-full"
+        >
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Latest Reviews -->
+    <div class="w-4/5 m-auto h-[800px] py-20">
+      <h1 class="text-4xl font-bold">
+        <span class="border-b-4 border-blue-800">Latest</span> Reviews
+      </h1>
+      <div class="w-full h-full grid grid-cols-4 gap-10 grid-rows-2 pt-10">
+        <div class="col-span-2 row-span-2 bg-white drop-shadow-2xl">
+          <img
+            src="./images/blog_img5.svg"
+            alt=""
+            class="w-full h-[70%] object-cover"
+          />
+          <div class="p-5 space-y-5">
+            <h1 class="text-xl font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </h1>
+            <p class="text-sm text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur reiciendis minima impedit ex magnam totam temporibus
+              vero voluptates suscipit non.
+            </p>
+            <p>
+              <span class="font-semibold text-gray-500">News</span>
+              <span class="text-gray-300">2 months ago</span>
+            </p>
+          </div>
+        </div>
+        <div class="bg-white drop-shadow-2xl">
+          <img
+            src="./images/blog_img5.svg"
+            alt=""
+            class="w-full h-[50%] object-cover"
+          />
+          <div class="p-5 space-y-5">
+            <h1 class="text-lg font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </h1>
+
+            <p>
+              <span class="font-semibold text-gray-500">News</span>
+              <span class="text-gray-300">2 months ago</span>
+            </p>
+          </div>
+        </div>
+        <div class="bg-white drop-shadow-2xl">
+          <img
+            src="./images/blog_img5.svg"
+            alt=""
+            class="w-full h-[50%] object-cover"
+          />
+          <div class="p-5 space-y-5">
+            <h1 class="text-lg font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </h1>
+
+            <p>
+              <span class="font-semibold text-gray-500">News</span>
+              <span class="text-gray-300">2 months ago</span>
+            </p>
+          </div>
+        </div>
+        <div class="bg-white drop-shadow-2xl">
+          <img
+            src="./images/blog_img5.svg"
+            alt=""
+            class="w-full h-[50%] object-cover"
+          />
+          <div class="p-5 space-y-5">
+            <h1 class="text-lg font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </h1>
+
+            <p>
+              <span class="font-semibold text-gray-500">News</span>
+              <span class="text-gray-300">2 months ago</span>
+            </p>
+          </div>
+        </div>
+        <div class="bg-white drop-shadow-2xl">
+          <img
+            src="./images/blog_img5.svg"
+            alt=""
+            class="w-full h-[50%] object-cover"
+          />
+          <div class="p-5 space-y-5">
+            <h1 class="text-lg font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </h1>
+
+            <p>
+              <span class="font-semibold text-gray-500">News</span>
+              <span class="text-gray-300">2 months ago</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="w-full bg-[#040C15] py-10">
+      <div
+        class="w-11/12 md:w-4/5 m-auto py-10 grid grid-cols-2 md:grid-cols-7 gap-8"
+      >
+        <div class="col-span-2 space-y-5">
+          <img src="./images/logo.png" alt="" class="w-36" />
+          <p class="text-xs text-gray-500">
+            We are more than just a bank, Work with individuals and businesses,
+            helping SMEs grow through financing and advisory services.
+          </p>
+        </div>
+        <div>
+          <h1 class="font-bold text-white py-2">Navigation</h1>
+          <div class="flex flex-col space-y-4 text-sm text-gray-300">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            <a href="#">features</a>
+          </div>
+        </div>
+        <div>
+          <h1 class="font-bold text-white py-2">Quick Links</h1>
+          <div class="flex flex-col space-y-4 text-sm text-gray-300">
+            <a href="#">Open Account</a>
+            <a href="#">Ask For Help</a>
+            <a href="#">Save Your money</a>
+            <a href="#">Digital Banking</a>
+          </div>
+        </div>
+        <div class="w-full">
+          <h1 class="font-bold text-white py-2">Explore More</h1>
+          <div class="flex flex-col space-y-4 text-sm text-gray-300">
+            <a href="#">Transfer money</a>
+            <a href="#">ATM Service</a>
+            <a href="#">Forex Services</a>
+            <a href="#">Cost OF Credit</a>
+          </div>
+        </div>
+        <div class="col-span-2 flex flex-col justify-between">
+          <div class="space-y-3">
+            <h1 class="text-lg text-white">Subscribe for News</h1>
+            <div class="flex items-center space-x-2">
+              <input
+                type="email"
+                placeholder="enter your email"
+                class="outline-0 bg-transparent px-5 py-2 text-gray-300 border border-gray-500 rounded-xl w-11/12"
+              />
+              <button class="px-5 py-2 bg-red-500 rounded text-white">
+                Send
+              </button>
+            </div>
+          </div>
+          <div class="flex items-center space-x-5">
+            <img src="./images/x.png" alt="" class="w-8 h-8" />
+            <img src="./images/insta.png" alt="" class="w-8 h-8" />
+            <img src="./images/youtube.png" alt="" class="w-12 h-12" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      let currentSlide = 0;
+      const totalSlides = 2; // Change this to the total number of slides
+      const slideInterval = 3000; // Change this to the interval time in milliseconds
+
+      function showSlide(index) {
+        const slider = document.getElementById("imageSlider");
+        const offset = -index * 100;
+        slider.style.transform = `translateX(${offset}%)`;
+        currentSlide = index;
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+      }
+
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+      }
+
+      function autoSlide() {
+        nextSlide();
+      }
+
+      setInterval(autoSlide, slideInterval);
+    </script>
+  </body>
+</html>

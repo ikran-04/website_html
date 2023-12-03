@@ -3,58 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frequently Asked Questions</title>
-    <!-- Include Tailwind CSS via CDN -->
+    <title>Automatic Image Slideshow</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <!-- Add your custom styles or link to your Tailwind CSS file here -->
+    <style>
+      /* Add your custom styles here if needed */
+    </style>
   </head>
-  <body class="bg-gray-100">
-    <div class="max-w-3xl mx-auto mt-8 p-6 bg-white shadow-md rounded-md">
-      <h1 class="text-2xl font-semibold mb-6">Frequently Asked Questions</h1>
-
-      <!-- FAQ Item 1 -->
-      <div class="mb-4">
-        <button
-          class="flex justify-between w-full items-center p-4 bg-gray-200 rounded-md focus:outline-none"
-        >
-          <span class="text-lg font-semibold">Question 1?</span>
-          <span class="text-gray-600">+</span>
-        </button>
-        <div class="hidden mt-2 text-gray-800">
-          <p>Answer to question 1.</p>
+  <body class="bg-gray-200 flex items-center justify-center">
+    <div class="relative overflow-hidden">
+      <div
+        id="imageSlider"
+        class="flex space-x-5transition-transform h-[600px] ease-in-out duration-500 transform"
+      >
+        <div class="w-[500px] [bg-gray-900] flex-shrink-0">
+          <div class="relative">
+            <img
+              src="./images/blog_img4.svg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-0 text-white p-10 bg-red-500/30 space-y-5"
+            >
+              <h1 class="text-3xl font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                eaque inventore quibusdam.
+              </h1>
+              <p>Fri \ 20 july 2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 flex-shrink-0">
+          <div class="relative">
+            <img
+              src="./images/blog_img2.svg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-0 text-white p-10 bg-red-500/30 space-y-5"
+            >
+              <h1 class="text-3xl font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                eaque inventore quibusdam.
+              </h1>
+              <p>Fri \ 20 july 2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 flex-shrink-0">
+          <div class="relative">
+            <img
+              src="./images/blog_img3.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-0 text-white p-10 bg-red-500/30 space-y-5"
+            >
+              <h1 class="text-3xl font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                eaque inventore quibusdam.
+              </h1>
+              <p>Fri \ 20 july 2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 flex-shrink-0">
+          <div class="relative">
+            <img
+              src="./images/blog_img3.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-0 text-white p-10 bg-red-500/30 space-y-5"
+            >
+              <h1 class="text-3xl font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                eaque inventore quibusdam.
+              </h1>
+              <p>Fri \ 20 july 2020</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- FAQ Item 2 -->
-      <div class="mb-4">
+      <!-- Navigation Buttons -->
+      <div
+        class="absolute top-1/2 left-0 w-full flex items-center justify-between"
+      >
         <button
-          class="flex justify-between w-full items-center p-4 bg-gray-200 rounded-md focus:outline-none"
+          onclick="prevSlide()"
+          class="text-white bg-indigo-500 hover:bg-indigo-700 px-4 py-2 rounded-l"
         >
-          <span class="text-lg font-semibold">Question 2?</span>
-          <span class="text-gray-600">+</span>
+          Previous
         </button>
-        <div class="hidden mt-2 text-gray-800">
-          <p>Answer to question 2.</p>
-        </div>
+        <button
+          onclick="nextSlide()"
+          class="text-white bg-indigo-500 hover:bg-indigo-700 px-4 py-2 rounded-r"
+        >
+          Next
+        </button>
       </div>
-
-      <!-- Add more FAQ items as needed -->
     </div>
 
     <script>
-      // Add JavaScript to toggle visibility of answers on button click
-      document.addEventListener("DOMContentLoaded", function () {
-        const faqButtons = document.querySelectorAll(".mb-4 button");
+      let currentSlide = 0;
+      const totalSlides = 2; // Change this to the total number of slides
+      const slideInterval = 3000; // Change this to the interval time in milliseconds
 
-        faqButtons.forEach((button) => {
-          button.addEventListener("click", () => {
-            const answer = button.nextElementSibling;
-            answer.classList.toggle("hidden");
-          });
-        });
-      });
+      function showSlide(index) {
+        const slider = document.getElementById("imageSlider");
+        const offset = -index * 100;
+        slider.style.transform = `translateX(${offset}%)`;
+        currentSlide = index;
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+      }
+
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+      }
+
+      function autoSlide() {
+        nextSlide();
+      }
+
+      setInterval(autoSlide, slideInterval);
     </script>
   </body>
 </html>

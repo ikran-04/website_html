@@ -23,6 +23,7 @@
       display: none;
     }
   </style>
+
   <body
     style="background-image: url(./images/background.jpg)"
     class="w-full h-screen bg-left"
@@ -99,6 +100,13 @@
                 href="/services.html"
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded"
                 >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="/blog.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded"
+                >Blog</a
               >
             </li>
             <li>
@@ -795,6 +803,107 @@
       </div>
     </div>
 
+    <!-- FAQ -->
+    <div class="w-3/5 m-auto py-20 space-y-10">
+      <h1 class="text-4xl font-semibold mb-6 text-center">
+        Frequently Asked Questions
+      </h1>
+
+      <!-- FAQ Item 1 -->
+      <div class="mb-4">
+        <button
+          class="flex justify-between w-full items-center p-4 rounded-md border-b focus:outline-none"
+        >
+          <span class="text-2xl font-semibold">What is Shariah Banking</span>
+          <span class="text-gray-600">
+            <i class="fas fa-plus"></i>
+          </span>
+        </button>
+        <div
+          class="hidden mt-2 ml-4 text-gray-800 border-l-4 border-blue-800 p-2"
+        >
+          <p>
+            Shariah banking, also known as Islamic banking, refers to a system
+            of banking that operates in accordance with the principles of
+            Shariah law. It is guided by ethical and moral principles derived
+            from the Quran and the teachings of Prophet Muhammad (peace be upon
+            him).
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="mb-4">
+        <button
+          class="flex justify-between w-full items-center p-4 rounded-md border-b focus:outline-none"
+        >
+          <span class="text-2xl font-semibold"
+            >What is Shariah compliant microfinance?</span
+          >
+          <span class="text-gray-600">
+            <i class="fas fa-plus"></i>
+          </span>
+        </button>
+        <div
+          class="hidden mt-2 ml-4 text-gray-800 border-l-4 border-blue-800 p-2"
+        >
+          <p>
+            Shariah-compliant microfinance refers to the provision of
+            microfinance services, such as financing, savings, and insurance,
+            that operate in accordance with the principles of Shariah law
+            (Shariah). It incorporates ethical and moral considerations into its
+            operations, following the guidelines set by the Quran and the
+            teachings of Prophet Muhammad (peace be upon him).
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="mb-4">
+        <button
+          class="flex justify-between w-full items-center p-4 rounded-md border-b focus:outline-none"
+        >
+          <span class="text-2xl font-semibold"
+            >What is Shariah compliant microfinance?</span
+          >
+          <span class="text-gray-600">
+            <i class="fas fa-plus"></i>
+          </span>
+        </button>
+        <div
+          class="hidden mt-2 ml-4 text-gray-800 border-l-4 border-blue-800 p-2"
+        >
+          <p>
+            Shariah-compliant microfinance refers to the provision of
+            microfinance services, such as financing, savings, and insurance,
+            that operate in accordance with the principles of Shariah law
+            (Shariah). It incorporates ethical and moral considerations into its
+            operations, following the guidelines set by the Quran and the
+            teachings of Prophet Muhammad (peace be upon him).
+          </p>
+        </div>
+      </div>
+
+      <!-- Add more FAQ items as needed -->
+    </div>
+
+    <script>
+      // Add JavaScript to toggle visibility of answers on button click
+      document.addEventListener("DOMContentLoaded", function () {
+        const faqButtons = document.querySelectorAll(".mb-4 button");
+
+        faqButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const answer = button.nextElementSibling;
+            answer.classList.toggle("hidden");
+
+            const icon = button.querySelector("i");
+            icon.classList.toggle("fa-plus");
+            icon.classList.toggle("fa-minus");
+          });
+        });
+      });
+    </script>
     <!-- cards -->
 
     <div class="w-4/5 m-auto py-20">
