@@ -80,8 +80,10 @@
       </div>
     </nav>
 
-    <div class="w-4/5 m-auto grid grid-cols-3 grid-rows-2 gap-10 py-10">
-      <div class="col-span-2 row-span-2">
+    <div
+      class="w-11/12 md:w-4/5 m-auto grid lg:grid-cols-3 grid-rows-2 gap-10 py-10"
+    >
+      <div class="md:col-span-2 md:row-span-2">
         <div class="relative">
           <img
             src="./images/blog_img1.svg"
@@ -89,13 +91,13 @@
             class="w-full h-full object-cover"
           />
           <div
-            class="absolute bottom-0 text-white p-10 bg-red-500/30 space-y-5"
+            class="absolute bottom-0 text-white p-2 md:p-10 md:bg-red-500/30 space-y-5"
           >
-            <h1 class="text-3xl font-semibold">
+            <h1 class="text-sm md:text-xl md:text-3xl font-semibold">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
               eaque inventore quibusdam.
             </h1>
-            <p>Fri \ 20 july 2020</p>
+            <p class="text-xs md:text-base">Fri \ 20 july 2020</p>
           </div>
         </div>
       </div>
@@ -107,9 +109,9 @@
             class="w-full h-full object-cover"
           />
           <div
-            class="absolute bottom-0 text-white p-5 bg-gray-500/30 space-y-5"
+            class="absolute bottom-0 text-white p-5 md:bg-gray-500/30 space-y-5"
           >
-            <h1 class="text-xl font-semibold">
+            <h1 class="text-base md:text-xl font-semibold">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
             </h1>
 
@@ -125,7 +127,7 @@
             class="w-full h-full object-cover"
           />
           <div
-            class="absolute bottom-0 text-white p-5 bg-gray-500/30 space-y-5"
+            class="absolute bottom-0 text-white p-5 md:bg-gray-500/30 space-y-5"
           >
             <h1 class="text-xl font-semibold">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -142,10 +144,12 @@
       <h1 class="text-4xl font-bold">
         <span class="border-b-4 border-blue-800">The</span> Latest
       </h1>
-      <div class="py-10 flex gap-10 lg:grid-cols-3">
-        <div class="w-[400px] h-[480px] bg-white drop-shadow-2xl">
+      <div
+        class="py-10 gap-10 grid grid-col-1 lg:grid-cols-3 justify-items-center"
+      >
+        <div class="bg-white drop-shadow-2xl">
           <img
-            src="./images/blog_img5.svg"
+            src="./images/blog_img3.png"
             alt=""
             class="w-full h-[50%] object-cover"
           />
@@ -164,7 +168,7 @@
             </p>
           </div>
         </div>
-        <div class="w-[400px] h-[480px] bg-white drop-shadow-2xl">
+        <div class="bg-white drop-shadow-2xl">
           <img
             src="./images/blog_img4.svg"
             alt=""
@@ -185,7 +189,7 @@
             </p>
           </div>
         </div>
-        <div class="w-[400px] h-[480px] bg-white drop-shadow-2xl">
+        <div class="bg-white drop-shadow-2xl">
           <img
             src="./images/blog_img2.svg"
             alt=""
@@ -213,9 +217,9 @@
     <div class="relative overflow-hidden py-20">
       <div
         id="imageSlider"
-        class="flex space-x-5 transition-transform h-[600px] ease-in-out duration-500 transform"
+        class="flex space-x-5 transition-transform h-[400px] md:h-[600px] ease-in-out duration-500 transform"
       >
-        <div class="w-[800px] flex-shrink-0">
+        <div class="w-[200] md:w-[800px] flex-shrink-0">
           <div class="relative w-full h-full">
             <img
               src="./images/blog_img4.svg"
@@ -231,7 +235,7 @@
             </div>
           </div>
         </div>
-        <div class="w-[800px] flex-shrink-0">
+        <div class="w-[400] md:w-[800px] flex-shrink-0">
           <div class="relative w-full h-full">
             <img
               src="./images/blog_img2.svg"
@@ -247,7 +251,7 @@
             </div>
           </div>
         </div>
-        <div class="w-[800px] flex-shrink-0">
+        <div class="w-[400] md:w-[800px] flex-shrink-0">
           <div class="relative w-full h-full">
             <img
               src="./images/blog_img4.svg"
@@ -263,7 +267,7 @@
             </div>
           </div>
         </div>
-        <div class="w-[800px] flex-shrink-0">
+        <div class="w-[400] md:w-[800px] flex-shrink-0">
           <div class="relative w-full h-full">
             <img
               src="./images/blog_img2.svg"
@@ -301,12 +305,14 @@
     </div>
 
     <!-- Latest Reviews -->
-    <div class="w-4/5 m-auto h-[800px] py-20">
+    <div class="w-11/12 md:w-4/5 m-auto md:h-[800px] py-20">
       <h1 class="text-4xl font-bold">
         <span class="border-b-4 border-blue-800">Latest</span> Reviews
       </h1>
-      <div class="w-full h-full grid grid-cols-4 gap-10 grid-rows-2 pt-10">
-        <div class="col-span-2 row-span-2 bg-white drop-shadow-2xl">
+      <div
+        class="w-full h-full grid md:grid-cols-4 gap-10 md:grid-rows-2 py-10"
+      >
+        <div class="md:col-span-2 md:row-span-2 bg-white drop-shadow-2xl">
           <img
             src="./images/blog_img5.svg"
             alt=""
@@ -329,7 +335,7 @@
         </div>
         <div class="bg-white drop-shadow-2xl">
           <img
-            src="./images/blog_img5.svg"
+            src="./images/blog_img3.png"
             alt=""
             class="w-full h-[50%] object-cover"
           />
@@ -346,7 +352,7 @@
         </div>
         <div class="bg-white drop-shadow-2xl">
           <img
-            src="./images/blog_img5.svg"
+            src="./images/blog_img4.svg"
             alt=""
             class="w-full h-[50%] object-cover"
           />
@@ -363,7 +369,7 @@
         </div>
         <div class="bg-white drop-shadow-2xl">
           <img
-            src="./images/blog_img5.svg"
+            src="./images/blog_img1.svg"
             alt=""
             class="w-full h-[50%] object-cover"
           />
@@ -380,7 +386,7 @@
         </div>
         <div class="bg-white drop-shadow-2xl">
           <img
-            src="./images/blog_img5.svg"
+            src="./images/blog_img2.svg"
             alt=""
             class="w-full h-[50%] object-cover"
           />
@@ -462,7 +468,7 @@
 
     <script>
       let currentSlide = 0;
-      const totalSlides = 2; // Change this to the total number of slides
+      const totalSlides = 4; // Change this to the total number of slides
       const slideInterval = 3000; // Change this to the interval time in milliseconds
 
       function showSlide(index) {
