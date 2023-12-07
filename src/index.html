@@ -65,10 +65,33 @@
         <a href="/">
           <img src="./images/logo_black.png" class="w-28" alt=" Logo" />
         </a>
-
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
         <div
           class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-sticky"
+          id="navbar-default"
         >
           <ul
             class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white"
@@ -118,45 +141,43 @@
             </li>
           </ul>
         </div>
-        <button class="flex md:hidden">
-          <i class="fa-solid fa-bars"></i>
-        </button>
       </div>
     </nav>
 
     <!-- hero  -->
-    <div
-      class="w-4/5 m-auto flex flex-col md:flex-row justify-between items-center py-16"
-    >
-      <div class="md:w-1/2 space-y-8">
-        <h1
-          class="text-6xl xl:text-7xl 2xl:8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-cyan-600"
-        >
-          Manage your finances simply and easily
-        </h1>
-        <p class="text-sm text-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-          facilis a rerum eveniet eligendi eaque maxime, sed reiciendis ratione
-          voluptatem laboriosam. Nesciunt molestiae ratione inventore quibusdam
-          in voluptate magnam possimus.
-        </p>
-        <div class="flex space-x-5">
-          <button
-            class="px-8 py-3 rounded-lg bg-[#032143] text-white flex items-center space-x-5"
+    <div class="my-24">
+      <div
+        class="w-4/5 m-auto flex flex-col md:flex-row justify-between items-center space-y-16 md:space-y-0 py-16"
+      >
+        <div class="md:w-1/2 space-y-8">
+          <h1
+            class="text-3xl lg:text-6xl xl:text-7xl 2xl:8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-cyan-600"
           >
-            <img src="./images/apple_os.png" alt="" class="w-8 h-8" />
-            <a href="#" class="">Download for os</a>
-          </button>
-          <button
-            class="px-8 py-3 rounded-lg border-2 border-[#032143] text-[#032143] flex items-center space-x-5"
-          >
-            <img src="./images/android.png" alt="" class="w-8 h-8" />
-            <a href="#" class="">Download for android</a>
-          </button>
+            Manage your finances simply and easily
+          </h1>
+          <p class="text-sm text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+            facilis a rerum eveniet eligendi eaque maxime, sed reiciendis
+            ratione voluptatem laboriosam.
+          </p>
+          <div class="flex space-x-5">
+            <button
+              class="px-5 py-2 rounded-lg bg-[#032143] text-white flex items-center space-x-2 md:space-x-5"
+            >
+              <img src="./images/apple_os.png" alt="" class="w-8 h-8" />
+              <a href="#" class="">for os</a>
+            </button>
+            <button
+              class="px-5 py-2 rounded-lg border-2 border-[#032143] text-[#032143] flex items-center space-x-2 md:space-x-5"
+            >
+              <img src="./images/android.png" alt="" class="w-8 h-8" />
+              <a href="#" class="">for android</a>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="md:w-1/2 h-screen">
-        <img src="./images/testt.svg" alt="" class="w-full h-full" />
+        <div class="md:w-1/2 h-">
+          <img src="./images/testt.svg" alt="" class="w-full h-full" />
+        </div>
       </div>
     </div>
 
@@ -871,7 +892,7 @@
           </span>
         </button>
         <div
-          class="hidden mt-2 ml-4 text-gray-800 border-l-4 border-blue-800 p-2"
+          class="md:hidden mt-2 ml-4 text-gray-800 border-l-4 border-blue-800 p-2"
         >
           <p>
             Shariah-compliant microfinance refers to the provision of
@@ -1071,5 +1092,6 @@
         (window.vaq = window.vaq || []).push(arguments);
       };
   </script>
+  <script></script>
   <script defer src="/_vercel/insights/script.js"></script>
 </html>
